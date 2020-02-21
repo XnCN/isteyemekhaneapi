@@ -22,9 +22,9 @@ class FoodHelper {
             });
     }
     getMenus() {
-        const menu1 = this.prepareMenuObject(0);
-        const menu2 = this.prepareMenuObject(1);
-        return { menu1, menu2 };
+        const MENU1 = this.prepareMenuObject(0);
+        const MENU2 = this.prepareMenuObject(1);
+        return { MENU1, MENU2 };
     }
 }
 

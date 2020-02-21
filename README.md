@@ -5,23 +5,21 @@
 Kurulum
 
     cd "dosyanın bulundugu yer"
-    yarn install
+    npm install
 Sunucunun başlatılması
 
-    yarn start
+    npm start
   
  
 |Adres|Yapılan iş  |
 |--|--|
-| /foods/{tarih} | Yemek listesini döndürür |
+| /{tarih} | Yemek Menülerini döndürür |
 
 **/Foods**
 Yemek listesinin döndürüleceği api yolu , tarih parametresini alır
 
-> http://localhost:3000/foods/GÜN-AY-YIL
+> http://localhost:3000/YIL-AY-GUN
+> http://localhost:3000/2020-02-21
 
 Örnek api çıktısı
-![enter image description here](https://i.imgyukle.com/2019/10/26/Evo0dY.png)
-
-Yapılacaklar
-Bakiye sorgulama api'ı eklenicek.
+![enter image description here](https://i.imgur.com/Ne1VDQN.png)

@@ -5,7 +5,7 @@ const app = express();
 //controllers
 const FoodController = require('./controllers/food.controller');
 
-app.get('/foods/:date', async (req, res) => {
+app.get('/:date', async (req, res) => {
     const { date } = req.params;
     const menuList = await FoodController.getFoods(date);
     res.send(menuList);
