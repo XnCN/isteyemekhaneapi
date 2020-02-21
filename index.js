@@ -1,14 +1,14 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 
-const requestService = require('./services/requestService');
-const foodService = require('./services/foodService');
+//controllers
+const FoodController = require('./controllers/food.controller');
 
-app.get('/foods/:date',async(req,res)=>{
-    const {date} = req.params;
-    const requestData = await requestService();
-    const foods = await foodService(date,requestData);
-    res.send(foods);
+app.get('/foods/:date', async (req, res) => {
+    const { date } = req.params;
+    const menuList = await FoodController.getFoods(date);
+    res.send(menuList);
 })
 
-app.listen(3000,()=>console.log('Server is running on http://localhost:3000'))
+app.listen(3000, () => console.log('Server is running on http://localhost:3000'))

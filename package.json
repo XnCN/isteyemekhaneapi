@@ -1,18 +1,40 @@
 {
   "name": "isteyemekhaneapi",
   "version": "1.0.0",
-  "description": "İskenderun Teknik Üniversitesi yemekhane otomasyonu web api",
+  "description": "İskenderun Teknik Universitesi Yemekhane Menüsü  Api",
   "main": "index.js",
-  "author": "Eray Han",
-  "homepage": "https://github.com/XnCN/isteyemekhaneapi",
-  "license": "MIT",
-  "scripts": {
-    "start": "node index.js"
-  },
   "dependencies": {
-    "axios": "^0.19.0",
-    "cheerio": "^1.0.0-rc.3",
+    "axios": "^0.19.2",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
-  }
+    "express": "^4.17.1",
+    "node-env-file": "^0.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XnCN/isteyemekhaneapi.git"
+  },
+  "keywords": [
+    "iste",
+    "yemekhane",
+    "api",
+    "food",
+    "api",
+    "iskenderun",
+    "teknik",
+    "üniversitesi",
+    "eray",
+    "han",
+    "aydemir",
+    "bilgisayar"
+  ],
+  "author": "Aydemir Eray Han",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/XnCN/isteyemekhaneapi/issues"
+  },
+  "homepage": "https://github.com/XnCN/isteyemekhaneapi#readme"
 }
